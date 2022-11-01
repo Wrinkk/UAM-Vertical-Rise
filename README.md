@@ -12,8 +12,10 @@
 3. build 후 실행
   - UI를 바꾸고 이를 컴파일 하기위해 build버튼을 누른 후 실행하면 GCS가 실행
 
-4. github에서 CKU-final2.world 파일을 다운로드 받은 후
-   PX4-Autopilot/ Tools/ simulation/ sitl_gazebo/ gazebo/ worlds로 이동
+4. github에서 CKU_final2.world, asphalt_plane 파일을 다운로드 받은 후
+   CKU_final2.world를 PX4-Autopilot/ Tools/ simulation/ sitl_gazebo/ gazebo/ worlds로 이동
+   asphalt_plane을 Home/.gazebo로 이동
+
 
 5. 1번째 Terminal 실행
   - 가제보를 실행시키기 위해 터미널을 열음
@@ -33,7 +35,7 @@
 
 9.이를 실행 시키 위해 실행 파일이 있는 해당 파일 경로로 진입하여 실행 코드를 입력
 
-10Tools/simulation/gazebo/sitl_multiple_run.sh -n 3 -m typhoon_h480 -w CKU-final2 입력
+10Tools/simulation/gazebo/sitl_multiple_run.sh -n 3 -m typhoon_h480 -w CKU_final2 입력
 
 11.가제보를 실행시키면 GCS와 연동을 확인해야함.
 
