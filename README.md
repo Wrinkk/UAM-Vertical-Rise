@@ -13,7 +13,7 @@
   - UI를 바꾸고 이를 컴파일 하기위해 build버튼을 누른 후 실행하면 GCS가 실행
 
 4. github에서 CKU_final2.world, asphalt_plane 파일을 다운로드 받은 후
-   CKU_final2.world를 PX4-Autopilot/ Tools/ simulation/ sitl_gazebo/ gazebo/ worlds로 복사
+   CKU_final2.world를 PX4-Autopilot/ Tools/ simulation/ gazebo/ sitl_gazebo/ worlds로 복사
    asphalt_plane을 Home/.gazebo/models로 복사
 
 
