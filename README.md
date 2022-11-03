@@ -33,13 +33,13 @@
 8. 다중 드론 및 드론의 수, 드론의 모델, 자신이 실행 시키고 싶은 월드 순으로 -n, -m, -w로 입력해야함
   - multiple run.sh 파일의 구조를 분석한 결과 -n, -m, -w 순으로 인식하도록 코딩 되어있기 때문에 순서대로 입력해야 함
 
-9.이를 실행 시키 위해 실행 파일이 있는 해당 파일 경로로 진입하여 실행 코드를 입력
+9. 이를 실행 시키 위해 실행 파일이 있는 해당 파일 경로로 진입하여 실행 코드를 입력
 
-10Tools/simulation/gazebo/sitl_multiple_run.sh -n 3 -m typhoon_h480 -w CKU_final2 입력
+10. Tools/simulation/gazebo/sitl_multiple_run.sh -n 3 -m typhoon_h480 -w CKU_final2 입력
 
-11.가제보를 실행시키면 GCS와 연동을 확인해야함.
+11. 가제보를 실행시키면 GCS와 연동을 확인해야함.
 
-12.연동이 되었다면 상단 중간에 Vehicle 1~3을 개별적으로 선택 가능
+12. 연동이 되었다면 상단 중간에 Vehicle 1~3을 개별적으로 선택 가능
   - 위에서 -n을 3으로 설정했기 때문에 3대가 나타남
 
 13. Vehicle 1~3을 선택하고 좌측 상단 구석 세로 툴바에서 Plan 클릭 후,  좌측 상단 구석 세로 툴바에서 이륙지점, 착륙지점 비행 경로, 리턴 설정 가능
@@ -48,3 +48,6 @@
 14. Plan을 설정했다면 업로드를 해야하는데 상단 툴바에서 upload버튼을 클릭해 기체에 Plan을 업로드 후, 좌측 상단 구석의 툴바에서 Fly버튼을 클릭
 
 15. 좌측 툴바에서 임무 설정한 기체를 선택하여 arm버튼 클릭 후 mission start버튼 클릭 후, 화면 하단의 슬라이드를 우측으로 스와이프 하면 임무 실행
+
+/ 바람 설정은 월드파일 내부에서 wind plugin을 수정해야함.
+/ 전파 설정은 PX4-Autopilot/Tools/simulation/gazebo/sitl_gazebo/models/iris/iris.sdf 에서 gpsNoise를 0이나 1로 설정
